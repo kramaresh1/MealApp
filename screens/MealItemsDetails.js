@@ -10,7 +10,6 @@ function MealItemDetails({route,navigation}){
     const selectedMeal=route.params.mealId;
    const favMealIds=   useSelector((state)=>state.favItems.ids) ;
    let mealFav=favMealIds.includes(selectedMeal);
- 
   const dispatch=useDispatch();
     function blinkIcon(){
         if(mealFav){

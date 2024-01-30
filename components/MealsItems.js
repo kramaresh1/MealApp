@@ -4,7 +4,6 @@ import { useNavigation } from '@react-navigation/native';
 function MealsItems({mealData }){
     const navigation = useNavigation();
     function mealsHandler(){
-        console.log("mealId",mealData.mealId)
         navigation.navigate("MealItemsDetails",{
              mealId:mealData.mealId,
         })
